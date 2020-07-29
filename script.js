@@ -1,5 +1,5 @@
 
-var apiKey = "";
+var apiKey = "pUEZfbiM5DRsQV7ZdaVpCdAVjVYAgWJ2";
 
 var searchTerm = "search here";
 var numResults = 0;
@@ -10,8 +10,6 @@ var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ se
 
 
 function runQuery();
-
-
 
 
   $.ajax({  
