@@ -1,9 +1,18 @@
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js";
+
+var apiKey = "";
+
+var searchTerm = "search here";
+var numResults = 0;
+var startYear = 0;
+var endYear = 0;
+var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ searchTerm + "&api-key=pUEZfbiM5DRsQV7ZdaVpCdAVjVYAgWJ2";
 
 
 
-  searchTerm = "search here";
-  queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ searchTerm + "&api-key=pUEZfbiM5DRsQV7ZdaVpCdAVjVYAgWJ2";
+function runQuery();
+
+
+
 
   $.ajax({  
     url: queryURL,
